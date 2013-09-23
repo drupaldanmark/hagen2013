@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+ *
+ * All styling should first be done as SASS and then compiled into CSS.
+ * The following dependencies should be present at compile time
+ *  - breakpoints (todo: verify name!)
+ *  - grid thingy
+ * For more information using SASS use google, it is recommended to use compass!
+ *
+ * We have split our source up into several logical places in order to
+ * lower inter-dependencies and increase reusability.
+ *
+ * _colors - All colors should be defined here and referenced through the rest.
+ * _mixins - Reusable functions like size calculation, transitions etc.
+ * _navigation - All general menu related.
+ * _layout - Top level layout, more specific should be in sub-files.
+ * _node-<bundle> - all specific styling for that node bundle.
+ *
+ * If for some reason it makes sense to split it out into a new file say
+ * we have a menu that is only rendered that way in one specific spot
+ * it should be put into it's own file with the file syntax like:
+ *
+ *   _navigation-myspecialmenu
+ *
+ *
+ */
+
+// All the common libraries etc.
+@import "compass";
+@import "compass/utilities/sprites";
+@import "compass/css3";
+@import "singularitygs";
+@import "breakpoints";
+
+// Loading font, colors and mixins
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+@import "colors";
+@import "mixins";
+
+// Normalizers here we go!
+@import "normalize";
+
+// Theme specific theming!
+
+$experimental-support-for-svg: true

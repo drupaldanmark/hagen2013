@@ -101,10 +101,10 @@ settings[mothership_form_required] = 1
 settings[mothership_form_labelwrap] = 0
 
 settings[mothership_classes_menu_wrapper] = 1
-settings[mothership_classes_menu_items] = 0
+settings[mothership_classes_menu_items] = 1
 settings[mothership_classes_menu_items_firstlast] = 1
-settings[mothership_classes_menu_collapsed] = 0
-settings[mothership_classes_menu_items_active] = 0
+settings[mothership_classes_menu_collapsed] = 1
+settings[mothership_classes_menu_items_active] = 1
 settings[mothership_classes_menu_leaf] = 1
 
 settings[mothership_modernizr] = 0

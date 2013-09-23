@@ -1,0 +1,82 @@
+/**
+ * @file
+ * A collection of different use-full mixins
+ */
+
+// *** REM fix ***
+// A fix so we can use rem & support ie8 & its retarded friends
+// $size is the em value
+// use: @include remfix('width', 1.5);
+@mixin remfix($prop, $size) {
+  #{$prop} : ($size * 10) + px;
+  #{$prop} : $size + rem;
+}
+
+// *** FONTSIZE ***
+// A wrapper to quickly set fontsize properties
+// $size followed by line-height
+// use: @include fontsize(1.6, 1.9)
+@mixin fontsize($size: 1.6, $line: $size * 1.5) {
+  @include remfix('font-size', $size);
+  @include remfix('line-height', $line);
+}
+
+// *** LINKCOLOR ***
+// A helper to set a elements colors for all states
+// @include linkcolor(#BADA55, HOTPINK)
+// optional hover decoration, visited color, focus color and default decoration - in that order.
+@mixin linkcolor($link, $hover: $link, $hoverdecoration: underline, $visited: $link, $focus: $hover, $defaultdecoration: none) {
+  a {
+    color: $link;
+    text-decoration: $defaultdecoration;
+  }
+  a:link {
+    color: $link;
+  }
+  a:visited {
+    color: $visited;
+  }
+  a:focus {
+    color: $focus;
+  }
+  a:hover {
+    color: $hover;
+    text-decoration: $hoverdecoration;
+  }
+}
+
+// Alternatice helper to declare different state colors.
+@mixin statecolor($link, $hover: $link, $hoverdecoration: underline, $visited: $link, $focus: $hover, $defaultdecoration: none) {
+  & {
+    color: $link;
+    text-decoration: $defaultdecoration;
+  }
+  &:link {
+    color: $link;
+  }
+  &:visited {
+    color: $visited;
+  }
+  &:focus {
+    color: $focus;
+  }
+  &:hover {
+    color: $hover;
+    text-decoration: $hoverdecoration;
+  }
+}
+
+// *** T R A N S I T I O N S ***
+@mixin easing($speed: 0.3s) {
+  -webkit-transition: all $speed ease-in-out;
+  -moz-transition: all $speed ease-in-out;
+  -o-transition: all $speed ease-in-out;
+  transition: all $speed ease-in-out;
+}
+
+@mixin ease-in($speed: 0.3s) {
+  -webkit-transition: all $speed ease-in;
+  -moz-transition: all $speed ease-in;
+  -o-transition: all $speed ease-in;
+  transition: all $speed ease-in;
+}
