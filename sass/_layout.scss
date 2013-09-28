@@ -1,5 +1,10 @@
 .header {
-  
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: rgb(190, 29, 44);
+  // Old browsers
+  @include filter-gradient(#710d10, #be1d2c, horizontal);
+  // IE6-9
+  @include background-image(linear-gradient(left, rgb(113, 13, 16) 0%, rgb(113, 13, 16) 50%, rgb(190, 29, 44) 51%, rgb(190, 29, 44) 100%));
 }
 
 .schedule {
