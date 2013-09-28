@@ -3,9 +3,14 @@
  *
  * All styling should first be done as SASS and then compiled into CSS.
  * The following dependencies should be present at compile time
- *  - breakpoints (todo: verify name!)
- *  - grid thingy
+ *  - breakpoint (todo: verify name!)
+ *  - singularitygs
  * For more information using SASS use google, it is recommended to use compass!
+ *
+ * You should have the following gems installed
+ * gem install compass
+ * gem install singularitygs
+ * gem install breakpoint
  *
  * We have split our source up into several logical places in order to
  * lower inter-dependencies and increase reusability.
@@ -30,7 +35,7 @@
 @import "compass/utilities/sprites";
 @import "compass/css3";
 @import "singularitygs";
-@import "breakpoints";
+@import "breakpoint";
 
 // Loading font, colors and mixins
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
@@ -42,5 +47,7 @@
 @import "normalize";
 
 // Theme specific theming!
+@import "general";
+@import "layout";
 
 $experimental-support-for-svg: true
