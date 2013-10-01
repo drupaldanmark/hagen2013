@@ -8,10 +8,9 @@
 <!-- page.tpl.php-->
 <?php } ?>
 
-<?php print $mothership_poorthemers_helper; ?>
 <div class="page">
 <?php print render($page['content']); ?>
-</div><!-- /page-->
+</div>
 
 <footer role="contentinfo">
   <?php print render($page['footer']); ?>

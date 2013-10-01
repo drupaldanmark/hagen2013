@@ -33,13 +33,15 @@ regions[page_bottom] = Page Bottom
 ;regions[help] = Help
 ;regions[highlighted] = Highlighted
 
-
+;-------------- C T O O L S P L U G I N S ---------------
+plugins[panels][layouts] = plugins/layouts
 
 ;-------------- C S S -------------
 stylesheets[all][] = css/base.css
 
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
+stylesheets[all][] = mothership-layout.css
 
 ;-------------- JS -------------
 scripts[] = js/script.js

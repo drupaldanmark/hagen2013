@@ -26,7 +26,6 @@
 }
 
 * {
-  @include box-sizing(border-box);
   @include font;
-  color: $main-dark;
+  color: $text;
 }
