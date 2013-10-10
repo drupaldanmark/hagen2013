@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 /**
  *
  * All styling should first be done as SASS and then compiled into CSS.
@@ -473,25 +472,22 @@ table {
 }
 /* line 17, ../sass/_layout.scss */
 .drupalhagen .schedule {
+  margin: 20px;
   min-height: 300px;
-  background-color: white;
 }
-/* line 20, ../sass/_layout.scss */
-.drupalhagen .schedule * {
-  color: #3a3a3a;
-}
-/* line 26, ../sass/_layout.scss */
+/* line 22, ../sass/_layout.scss */
 .drupalhagen .venue {
   min-height: 300px;
 }
-/* line 30, ../sass/_layout.scss */
+/* line 26, ../sass/_layout.scss */
 .drupalhagen .footer {
-  background-color: white;
   min-height: 300px;
 }
-/* line 33, ../sass/_layout.scss */
-.drupalhagen .footer * {
-  color: #3a3a3a;
+
+/* line 31, ../sass/_layout.scss */
+.session {
+  width: 300px;
+  float: left;
 }
 
 /* line 28, ../sass/_general.scss */
