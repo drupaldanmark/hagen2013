@@ -8,6 +8,7 @@ $plugin = array(
   'theme' => 'hagenpage',
   'css' => 'hagenpage.css',
   'regions' => array(
+    'topbar' => t('Top navigation'),
     'header' => t('Header'),
     'schedule' => t('Schedule'),
     'venue' => t('Venue'),

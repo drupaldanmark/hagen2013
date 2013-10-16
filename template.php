@@ -117,7 +117,14 @@ function NEWTHEME_form_alter(&$form, &$form_state, $form_id) {
 */
 
 function hagen2013_preprocess_panels_pane(&$vars) {
-  if ($vars['pane']->type == 'fieldable_panels_pane' && $vars['content']['#bundle'] == 'session') {
+  if ($vars['pane']->type == 'page_slogan') {
+    $vars['content'] = '<span class="slogan">' . $vars['content'] . '</span>';
+  }
+  else if ($vars['pane']->type == 'page_site_name') {
+//    kpr($vars);
+    $vars['content'] = '<h1>' . $vars['content'] . '</h1>';
+  }
+  else if ($vars['pane']->type == 'fieldable_panels_pane' && $vars['content']['#bundle'] == 'session') {
     $vars['theme_hook_suggestions'] = array('fieldable_panels_pane_session');
   }
 }

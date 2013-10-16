@@ -449,45 +449,179 @@ table {
   border-spacing: 0;
 }
 
-/* line 1, ../sass/_layout.scss */
+/* line 5, ../sass/_layout.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 5, ../sass/_layout.scss */
+/* line 9, ../sass/_layout.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 13, ../sass/_layout.scss */
 .drupalhagen {
   background-color: #24aae1;
 }
-/* line 7, ../sass/_layout.scss */
+/* line 15, ../sass/_layout.scss */
 .drupalhagen * {
   color: white;
 }
-/* line 11, ../sass/_layout.scss */
+/* line 19, ../sass/_layout.scss */
 .drupalhagen .header {
-  padding-top: 50px;
-  min-height: 300px;
+  padding-top: 5em;
   text-align: center;
 }
-/* line 17, ../sass/_layout.scss */
+/* line 24, ../sass/_layout.scss */
 .drupalhagen .schedule {
-  margin: 20px;
-  min-height: 300px;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
 }
-/* line 22, ../sass/_layout.scss */
+/* line 48, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+.drupalhagen .schedule:before, .drupalhagen .schedule:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 55, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+.drupalhagen .schedule:after {
+  clear: both;
+}
+/* line 28, ../sass/_layout.scss */
 .drupalhagen .venue {
-  min-height: 300px;
+  /* for IE 6/7 */
+  *zoom: expression(this.runtimeStyle.zoom="1", this.appendChild(document.createElement("br")).style.cssText="clear:both;font:0/0 serif");
+  /* non-JS fallback */
+  *zoom: 1;
+  margin-top: 50px;
+  border-top: 3px solid #1d3e5a;
 }
-/* line 26, ../sass/_layout.scss */
+/* line 48, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+.drupalhagen .venue:before, .drupalhagen .venue:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+/* line 55, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+.drupalhagen .venue:after {
+  clear: both;
+}
+/* line 32, ../sass/_layout.scss */
+.drupalhagen .venue iframe {
+  border: 0;
+}
+/* line 38, ../sass/_layout.scss */
 .drupalhagen .footer {
   min-height: 300px;
 }
 
-/* line 31, ../sass/_layout.scss */
+/* line 43, ../sass/_layout.scss */
+.drupalhagen-logo {
+  background-color: #aff;
+  /*background-image: url('');*/
+  height: 30px;
+  width: 30px;
+}
+
+/* line 50, ../sass/_layout.scss */
+.pane-system-main-menu {
+  float: right;
+}
+
+/* line 54, ../sass/_layout.scss */
+.topbar {
+  position: fixed;
+  z-index: 10;
+  background-color: #1d3e5a;
+  width: 100%;
+  padding: 0 20px;
+}
+/* line 29, ../sass/_mixins.scss */
+.topbar a {
+  color: white;
+  text-decoration: none;
+}
+/* line 33, ../sass/_mixins.scss */
+.topbar a:link {
+  color: white;
+}
+/* line 36, ../sass/_mixins.scss */
+.topbar a:visited {
+  color: white;
+}
+/* line 39, ../sass/_mixins.scss */
+.topbar a:focus {
+  color: #bebebe;
+}
+/* line 42, ../sass/_mixins.scss */
+.topbar a:hover {
+  color: #bebebe;
+  text-decoration: none;
+}
+/* line 63, ../sass/_layout.scss */
+.panels-ipe-display-container .topbar {
+  position: inherit;
+}
+/* line 70, ../sass/_layout.scss */
+.topbar nav,
+.topbar .menu,
+.topbar .pane-system-main-menu,
+.topbar li {
+  display: inline-block;
+}
+/* line 73, ../sass/_layout.scss */
+.topbar .menu {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+/* line 76, ../sass/_layout.scss */
+.topbar .menu li {
+  border-left: 1px solid #333;
+  line-height: 3em;
+}
+/* line 79, ../sass/_layout.scss */
+.topbar .menu li a {
+  padding: 1.3em 1.5em;
+}
+
+/* line 89, ../sass/_layout.scss */
+.slogan {
+  padding-left: 50px;
+  line-height: 50px;
+  display: inline-block;
+  color: white;
+  font-size: 0.7em;
+}
+
+/* line 97, ../sass/_layout.scss */
 .session {
-  width: 300px;
+  width: 31.66667%;
+  clear: right;
   float: left;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+}
+
+/* line 101, ../sass/_layout.scss */
+.button-ticket {
+  display: block;
+  padding: 20px;
+  font-size: 2em;
+  color: white;
+  background-color: #be1d2c;
+}
+
+/* line 109, ../sass/_layout.scss */
+.button-ticket:hover {
+  background-color: #710d10;
+  text-decoration: none;
 }
 
 /* line 28, ../sass/_general.scss */
