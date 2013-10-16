@@ -104,9 +104,11 @@ $gutter-styles: 'split';
   font-size: 2em;
   color: white;
   background-color: $red-light;
+
+  :hover {
+    background-color: $red;
+    text-decoration: none;
+  }
 }
 
-.button-ticket:hover {
-  background-color: $red;
-  text-decoration: none;
-}
+
