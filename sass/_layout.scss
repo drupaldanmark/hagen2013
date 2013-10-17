@@ -17,7 +17,7 @@ $gutter-styles: 'split';
   }
 
   .header {
-    padding-top: 5em;
+    padding-top: 50px;
     text-align: center;
   }
 
@@ -40,13 +40,6 @@ $gutter-styles: 'split';
   }
 }
 
-.drupalhagen-logo {
-  background-color: #aff;
-  /*background-image: url('');*/
-  height: 30px;
-  width: 30px;
-}
-
 .pane-system-main-menu {
   float: right;
 }
@@ -65,19 +58,23 @@ $gutter-styles: 'split';
   }
 
   nav,
-  .menu,
   .pane-system-main-menu,
   li {
-    display: inline-block;
+    display: inline;
   }
   .menu {
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
+    line-height: 50px;
+    float:right;
+    margin: 0;
+
     li {
-      border-left: 1px solid #333;
-      line-height: 3em;
       a {
-        padding: 1.3em 1.5em;
+        display: block;
+        height: 50px;
+        border-left: 1px solid white;
+        padding: 0 1.5em;
+        line-height: 50px;
+        float:left;
       }
 
     }
@@ -87,6 +84,10 @@ $gutter-styles: 'split';
 
 
 .slogan {
+  float:left;
+  background-image: url('../drupaldenmark-logo.png');
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
   padding-left: 50px;
   line-height: 50px;
   display: inline-block;
@@ -97,18 +98,4 @@ $gutter-styles: 'split';
 .session {
   @include float-span(4,1);
 }
-
-.button-ticket {
-  display: block;
-  padding: 20px;
-  font-size: 2em;
-  color: white;
-  background-color: $red-light;
-
-  :hover {
-    background-color: $red;
-    text-decoration: none;
-  }
-}
-
 
