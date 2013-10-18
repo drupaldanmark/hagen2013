@@ -11,6 +11,7 @@ $plugin = array(
     'topbar' => t('Top navigation'),
     'header' => t('Header'),
     'schedule' => t('Schedule'),
+    'sponsors' => t('Sponsors'),
     'venue' => t('Venue'),
     'footer' => t('Footer'),
   ),

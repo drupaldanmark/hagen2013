@@ -14,6 +14,11 @@
       <?php print $content['schedule']; ?>
     </div>
   </section>
+  <section class="sponsors" id="sponsors">
+    <div class="container">
+      <?php print $content['sponsors']; ?>
+    </div>
+  </section>
   <section class="venue" id="venue">
     <?php print $content['venue']; ?>
   </section>
