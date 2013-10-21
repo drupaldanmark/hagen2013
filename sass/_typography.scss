@@ -1,0 +1,20 @@
+//@include font-face("MuseoSansRounded",
+//font-files("MuseoSansRounded/MuseoSansRounded-500-webfont.eot", "MuseoSansRounded/MuseoSansRounded-500-webfont.woff", "MuseoSansRounded/MuseoSansRounded-500-webfont.ttf", "MuseoSansRounded/MuseoSansRounded-500-webfont.svg"), normal, normal);
+
+@font-face {
+  font-family: 'MuseoSansRounded';
+  src: url('../font/MuseoSansRounded/MuseoSansRounded-500-webfont.eot');
+  src: url('../font/MuseoSansRounded/MuseoSansRounded-500-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../font/MuseoSansRounded/MuseoSansRounded-500-webfont.woff') format('woff'),
+       url('../font/MuseoSansRounded/MuseoSansRounded-500-webfont.ttf') format('truetype'),
+       url('../font/MuseoSansRounded-500-webfont.svg#webfontH1QfuKrz') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MuseoSansRounded';
+}
+h1 {
+  font-size: 4em;
+}

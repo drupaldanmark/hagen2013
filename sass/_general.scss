@@ -1,28 +1,28 @@
 @mixin main-font {
-  font-family: 'Roboto', 'Trebuchet MS', arial, verdana;
+  //font-family: 'Roboto', 'Trebuchet MS', arial, verdana;
   .ie8 & {
-    font-family: 'Trebuchet MS', arial, verdana !important;
+    //font-family: 'Trebuchet MS', arial, verdana !important;
   }
 }
 
 @mixin font {
   @include main-font;
-  font-weight: 400 !important;
+  //font-weight: 400 !important;
 }
 
 @mixin font-semibold {
   @include main-font;
-  font-weight: 500 !important;
+  //font-weight: 500 !important;
 }
 
 @mixin font-bold {
   @include main-font;
-  font-weight: 700 !important;
+  //font-weight: 700 !important;
 }
 
 @mixin font-light {
   @include main-font;
-  font-weight: 300 !important;
+  //font-weight: 300 !important;
 }
 
 * {

@@ -25,6 +25,7 @@ sass_dir         = "sass"
 # extensions_dir   = "sass-extentions"
 images_dir       = "images"
 javascripts_dir  = "js"
+fonts_dir        = "/sites/all/theme/hagen2013/font"
 
 # Set this to the root of your project. All resource location above are
 # considered to be relative to this path.

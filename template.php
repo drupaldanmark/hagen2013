@@ -124,18 +124,26 @@ function hagen2013_preprocess_panels_pane(&$vars) {
 //    kpr($vars);
     $vars['content'] = '<h1>' . $vars['content'] . '</h1>';
   }
-  else if ($vars['pane']->type == 'fieldable_panels_pane' && $vars['content']['#bundle'] == 'session') {
-    $vars['theme_hook_suggestions'] = array('fieldable_panels_pane_session');
+  else if ($vars['pane']->type == 'fieldable_panels_pane') {
+
+    if ($vars['content']['#bundle'] == 'session') {
+      $vars['theme_hook_suggestions'] = array('fieldable_panels_pane_session');
+    }
+    else if ($vars['content']['#bundle'] == 'sponsor') {
+      $vars['theme_hook_suggestions'] = array('fieldable_panels_pane_sponsor');
+    }
   }
 }
 
 function hagen2013_theme() {
-  $items = array();
   return array(
     'fieldable_panels_pane_session' => array(
       'render element' => 'content',
       'template' => 'fieldable_panels_pane_session',
     ),
+    'fieldable_panels_pane_sponsor' => array(
+      'render element' => 'content',
+      'template' => 'fieldable_panels_pane_sponsor',
+    ),
   );
-  return $items;
 }

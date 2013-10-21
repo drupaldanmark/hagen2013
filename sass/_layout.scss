@@ -1,6 +1,6 @@
 
 $grids: 12;
-//$gutter-styles: 'split';
+$gutter-styles: 'split';
 
 * {
   @include box-sizing(border-box);
@@ -15,30 +15,95 @@ $grids: 12;
   * {
     color: white;
   }
-
-  .header {
-    padding-top: 50px;
-    text-align: center;
-  }
-
-  .schedule {
-    @include clearfix;
-  }
-
-  .venue {
-    @include clearfix;
+}
+.header {
+  padding-top: 50px;
+  @include clearfix;
+  .alpha,
+  .beta {
     margin-top: 50px;
-    border-top: 3px solid $main-dark;
-    iframe {
-      border: 0;
-    }
-
   }
+  .alpha {
+    text-align: center;
+    @include float-span(8,1);
 
-  .footer {
-    min-height: 300px;
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    h2 {
+      font-size: 2.25em;
+
+      margin: 0 0 25px 0;
+      text-transform: uppercase;
+    }
+    .field-name-field-basic-image-image img.panopoly-image-full {
+      width: 270px !important;
+    }
+  }
+  .beta {
+    @include float-span(4,9);
   }
 }
+
+.schedule {
+  @include clearfix;
+  .fieldable-panels-pane {
+    text-align: center;
+  }
+}
+
+.venue {
+  @include clearfix;
+  margin-top: 50px;
+  border-top: 3px solid $main-dark;
+  iframe {
+    border: 0;
+  }
+
+}
+
+.footer {
+  @include clearfix;
+  .fieldable-panels-pane {
+    padding-bottom: 20px;
+    @include float-span(6, 1);
+    &:nth-of-type(1),
+    &:nth-of-type(2n+1) {
+      @include float-span(6, 'first');
+    }
+    &:nth-of-type(2n) {
+      @include float-span(6, 'last');
+    }
+  }
+}
+
+.sponsors {
+  background-color: white;
+  * {
+    color: $text;
+  }
+  .fieldable-panels-pane {
+    text-align: center;
+    h2 {
+      padding: 25px;
+    }
+  }
+
+  .sponsor {
+    @include float-span(3, 1);
+    &:nth-of-type(2),
+    &:nth-of-type(4n+1) {
+      //@include float-span(3, 'first');
+    }
+    &:nth-of-type(4n) {
+      //@include float-span(3, 'last');
+    }
+    text-align: center;
+  }
+}
+
 
 .pane-system-main-menu {
   float: right;
@@ -80,8 +145,6 @@ $grids: 12;
     }
   }
 }
-
-
 
 .slogan {
   float:left;
