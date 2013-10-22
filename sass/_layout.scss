@@ -25,7 +25,7 @@ $gutter-styles: 'split';
   }
   .alpha {
     text-align: center;
-    @include float-span(8,1);
+    @include float-span(7,1);
 
     h1 {
       margin: 0;
@@ -43,7 +43,7 @@ $gutter-styles: 'split';
     }
   }
   .beta {
-    @include float-span(4,9);
+    @include float-span(5,8);
   }
 }
 
